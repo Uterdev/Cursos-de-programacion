@@ -17,3 +17,4 @@ function Persona(nombre, apellido, edad, telefono,) {
 
 let miembro1 = new Persona('Juan', 'Alvarez', '18', '952657694');
 console.log(miembro1.mayorEdad());
+console.log(miembro1);
