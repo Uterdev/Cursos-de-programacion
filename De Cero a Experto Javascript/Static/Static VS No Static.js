@@ -86,3 +86,7 @@ console.log(persona1.email);
 console.log(empleado1.email);
 console.log(Persona.email);
 console.log(Empleado.email);
+
+
+persona1.email = 'juanalvarez@mail.com';
+console.log(persona1.email);
