@@ -46,7 +46,7 @@ class Empleado extends Persona{
     constructor (nombre, apellido, edad, sueldo){
         super (nombre, apellido, edad);
         this._sueldo = sueldo;
-        this._idEmpleado = this.idPersona;
+        this._idEmpleado = this._idPersona;
     }
 
     get idEmpleado (){
@@ -68,7 +68,7 @@ class Cliente extends Persona{
     constructor (nombre, apellido, edad, fechaRegistro){
         super (nombre, apellido, edad);
         this._fechaRegistro = fechaRegistro;
-        this._idCliente = this.idPersona;
+        this._idCliente = this._idPersona;
     }
     get idCliente(){
         return this._idCliente;
@@ -92,4 +92,4 @@ let empleado1 = new Empleado ('Daniel', 'Garcia', 35, 1900);
 console.log(empleado1.toString());
 
 let cliente1 = new Cliente ('Juan', 'Mendez', 35, '9/6/2024');
-console.log(cliente1.idCliente);
+console.log(cliente1.toString());
